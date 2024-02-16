@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            /* background-color: #f4f4f4; */
+            background: url('https://images.wallpaperscraft.com/image/single/interior_design_style_design_68248_1366x768.jpg') center center fixed;
+            
+        }
+
+        .title-box {
+            text-align: center;
+            background-color: rgb(122, 216, 223);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 300px; /* Adjust the width as needed */
+            background-color: rgb(130, 201, 227);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for better visibility */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .house-image {
+            max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+            height: auto; /* Maintain the image's aspect ratio */
+            margin-top: 20px; /* Add some space between the form and the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="title-box">
+        <h1>House Price Prediction !!</h1>
+    </div>
+    <form action="/predict" method="post">
+        <label for="square_feet">Square Feet:</label>
+        <input type="number" name="square_feet" required>
+
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <input type="number" name="bedrooms" required>
+
+        <label for="bathrooms">Number of Bathrooms:</label>
+        <input type="number" name="bathrooms" required>
+
+        <label for="neighborhood">Neighborhood:</label>
+        <input type="text" name="neighborhood" required>
+
+        <label for="year_built">Year Built:</label>
+        <input type="number" name="year_built" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

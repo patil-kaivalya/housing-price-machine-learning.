@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Result</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://assets.architecturaldigest.in/photos/60083e76274aca243711c3a4/4:3/w_1024,h_768,c_limit/ghaziabad-uttar-pradesh-homes-photos-1366x768.jpg') center center fixed;
+            background-size: cover;
+        }
+
+        h1, p, a {
+            text-align: center;
+            color: #020000; /* Set text color to white for better visibility on the background image */
+        }
+
+        a {
+            text-decoration: underline;
+            color: rgb(4, 0, 255); /* Set link color to blue */
+        }
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+.moving-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0); /* Adjust the text color as needed */
+    text-align: center;
+    padding: 5px;
+    animation: moveFooter 20s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes moveFooter {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+        footer {
+            margin-top: auto; /* Push the footer to the bottom */
+            text-align: center;
+            color: #5b5959;
+            background: rgb(255, 255, 255); /* Add a semi-transparent background to the footer for better readability */
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(255, 255, 255); padding: 20px; border: 1px solid #000000; border-radius: 10px;">
+        <h1>House Price Prediction Result</h1>
+        <p>Predicted Price for the New House: <br><strong>{{ predicted_price }}</strong></p>
+        <a href="/">Go back to prediction</a>
+        <p>:) Thank You !!<p>
+        <footer class="moving-footer">
+            <p>_/\_&copy;2024 Kaivalya_Patil.All rights reserved._/\_&copy;2024 Kaivalya_Patil.All rights reserved._/\_&copy;2024 Kaivalya_Patil.All rights reserved._/\_&copy;2024 Kaivalya_Patil.All rights reserved._/\_</p>
+        </footer>
+    </div>
+</body>
+</html>
